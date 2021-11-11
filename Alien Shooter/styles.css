@@ -1,0 +1,105 @@
+body {
+  background: url("./assets/background.jpg") no-repeat;
+  background-size: cover;
+}
+
+#main {
+  background-color: hsla(0%, 0%, 0%, 0.5);
+  width: 55vw;
+  height: 80vh;
+  position: relative;
+  margin: 20px auto;
+  opacity: 90%;
+}
+
+#board {
+  position: absolute;
+  top: 3%;
+  margin-left: 80%;
+}
+
+.label {
+  font-family: "Jokerman", "Chiller", "Trebuchet MS", Arial,
+    sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  color: aliceblue;
+  padding: 20px;
+}
+
+.alien {
+  position: absolute;
+  width: 70px;
+  height: 75px;
+  z-index: 2;
+}
+
+.portal {
+  position: absolute;
+  width: 75px;
+  height: 70px;
+}
+
+.splash {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.fadeInX {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  transition: width 2s;
+}
+
+@keyframes fadeInX {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.fadeInBottom {
+  animation-name: fadeInBottom;
+  animation-duration: 0.5s;
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

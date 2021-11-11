@@ -74,3 +74,11 @@ typings/
 
 # FuseBox cache
 .fusebox/
+
+-------------------
+# ignoreing additional files
+Alien Shooter/assets/sky-blue_balloon.png
+Alien Shooter/assets/navy-blue_balloon.png
+Alien Shooter/assets/green_balloon.png
+Alien Shooter/assets/red_balloon.png
+Alien Shooter/gameScript.js

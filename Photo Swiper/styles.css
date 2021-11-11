@@ -1,0 +1,41 @@
+body {
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+img {
+    width: 50vw;
+    height: 80vh;
+    transition: transform 200ms;
+    object-fit: cover;
+}
+
+img.left {
+    transform: translateX(-100vw);
+}
+
+img.right{
+    transform: translateX(100vw);
+}
+
+/* to load immediately*/
+img.next{
+    display: none;
+}
+
+#left {
+    float: left;
+    background-color: transparent;
+    align-content: center;
+    border: none;
+    padding-right: 10%;
+}
+#right {
+    float:right;
+    background-color: transparent;
+    align-content: center;
+    border: none;
+    padding-left: 10%;
+}
